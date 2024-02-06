@@ -13,6 +13,7 @@ import {
   Team,
 } from "./components";
 import Home from "./Home";
+import Pricing from "./pages/Pricing";
 
 const App = () => {
   return (
@@ -45,6 +46,10 @@ const App = () => {
 
           {/* footer */}
           <Route path="/footer" element={<Footer />} />
+
+          {/* pages */}
+          <Route path="/pricing" element={<Pricing />} />
+
         </Routes>
         <Footer />
       </Router>
