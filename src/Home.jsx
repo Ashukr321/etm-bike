@@ -17,13 +17,15 @@ const Home = () => {
 
     <>
     <Hero/>
+    <Team/>
+
     <Feature/>
     <CounterUp/>
     <Service/>
     <Product/>
-    <Team/>
     <Connect/>
     <Client/>
+
     </>
   );
 };

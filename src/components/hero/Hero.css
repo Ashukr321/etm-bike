@@ -1,0 +1,26 @@
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-align:center;
+  background-color:#000000;
+}
+
+.hero_heading{
+  font-size:3rem;
+  letter-spacing:.1em;
+  font-family: serif;
+  font-weight: bold;
+  background: linear-gradient(#b5563b,#dba02b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p{
+  font-size:1.2rem;
+  padding:.4rem;
+  width:90%;
+  color:#a2a2a2;
+  letter-spacing:.1em;
+}
