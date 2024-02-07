@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Typography,
   Stack,
@@ -11,19 +11,20 @@ import {
   List,
   ListItem,
   Hidden,
-} from '@mui/material';
-import { Link } from 'react-router-dom';
-import MenuIcon from '@mui/icons-material/Menu';
-import Home from '@mui/icons-material/Home';
-import InfoIcon from '@mui/icons-material/Info';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-import logo from '../../assets/logo.png'
+} from "@mui/material";
+import { Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
+import Home from "@mui/icons-material/Home";
+import InfoIcon from "@mui/icons-material/Info";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import CallIcon from '@mui/icons-material/Call';
+import logo from "../../assets/logo.png";
 
-import './Navbar.css'
+import "./Navbar.css";
 const Navbar = () => {
   // Check if the screen width is smaller than 768px
-  const isSmallScreen = useMediaQuery('(max-width:768px)');
+  const isSmallScreen = useMediaQuery("(max-width:768px)");
 
   // State to manage the drawer open/close status
   const [drawerOpen, setDrawerOpen] = React.useState(false);
@@ -48,129 +49,159 @@ const Navbar = () => {
     <div>
       {/* Top navigation stack */}
       <Stack
-        backgroundColor='black'
-        direction={'row'}
-        alignItems={'center'}
-        padding={'2px 24px'}
-        justifyContent={'space-between'}
-        sx={{ color: 'white' }}
+        backgroundColor="black"
+        direction={"row"}
+        alignItems={"center"}
+        padding={"2px 24px"}
+        justifyContent={"space-between"}
+        sx={{ color: "white" }}
       >
         {/* Brand/logo */}
-        <Box >
-          <Link to='/' >
-              <img src={logo} alt="logo" className='logo' />
-            </Link>
+        <Box>
+          <Link to="/">
+            <img src={logo} alt="logo" className="logo" />
+          </Link>
         </Box>
 
         {/* Navigation buttons (visible on larger screens) */}
         <Hidden smDown>
           <Box>
-            <ButtonGroup  >
-              <Link to='/' >
-                <Button sx={{ color: '#f3e5f5', fontSize:"1.1rem" }} variant='none'>
+            <ButtonGroup>
+              <Link to="/">
+                <Button
+                  sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
+                  variant="none"
+                >
                   Home
                 </Button>
               </Link>
 
-              <Link to='/service' >
-                <Button sx={{ color: '#f3e5f5',  fontSize:"1.1rem" }} variant='none'>
-                services
+              <Link to="/service">
+                <Button
+                  sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
+                  variant="none"
+                >
+                  services
                 </Button>
               </Link>
 
-              <Link to='/product' >
-                <Button sx={{ color: '#f3e5f5',fontSize:"1.1rem" }} variant='none'>
+              <Link to="/product">
+                <Button
+                  sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
+                  variant="none"
+                >
                   product
                 </Button>
               </Link>
-              <Link to='/client' >
-                <Button sx={{ color: '#f3e5f5',fontSize:"1.1rem" }} variant='none'>
+              <Link to="/client">
+                <Button
+                  sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
+                  variant="none"
+                >
                   client
                 </Button>
               </Link>
-             
             </ButtonGroup>
-            <Link to='https://wa.me/7004246315' marginLeft={2} target='_blank'>
-  <Button variant="contained" color='warning' sx={{ color: '#f3e5f5', fontSize: "1.1rem" }}>
-    Connect <WhatsAppIcon />
-   
-  </Button>
-</Link>
-              
+
+            <ButtonGroup>
+            <Link to="https://wa.me/7004246315" marginLeft={2} >
+              <Button
+                variant="contained"
+                color="warning"
+                sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
+              >
+                Connect <WhatsAppIcon />
+              </Button>
+            </Link>
+
+            <Link to="/"  target="_blank">
+              <Button
+                variant="contained"
+                color="info"
+                sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
+              >
+              Enquiry<CallIcon/>
+              </Button>
+            </Link>
+            </ButtonGroup>
+
+
+
           </Box>
         </Hidden>
 
 
 
-
         {/* Mobile menu button (visible on smaller screens) */}
-          {isSmallScreen && (
+        {isSmallScreen && (
           <Box>
             <IconButton
-              sx={{ color: 'white' }}
-              aria-label='open drawer'
-              edge='end'
+              sx={{ color: "white" }}
+              aria-label="open drawer"
+              edge="end"
               onClick={handleDrawerOpen}
             >
               <MenuIcon />
             </IconButton>
             {/* Drawer for mobile navigation */}
             <Drawer
-              anchor='left'
-              padding='20px 30px'
+              anchor="left"
+              padding="20px 30px"
               open={drawerOpen}
               onClose={handleDrawerClose}
-            backgroundColor='seconday'
+              backgroundColor="seconday"
             >
+
+
               <List>
                 {/* Mobile navigation items */}
-                <Link to='/' style={{ textDecoration: 'none' }}>
-              <ListItem
-                button
-                justifyContent='center'
-                onClick={handleDrawerItemClick}
-              >
-                <Home marginLeft={'20px'}></Home>
-                <Typography
-                  margin={'0 20px'}
-                  variant='overline'
-                  color='secondary'
-                >
-                  home
-                </Typography>
-              </ListItem>
+                <Link to="/" style={{ textDecoration: "none" }}>
+                  <ListItem
+                    button
+                    justifyContent="center"
+                    onClick={handleDrawerItemClick}
+                  >
+                    <Home marginLeft={"20px"}></Home>
+                    <Typography
+                      margin={"0 20px"}
+                      variant="overline"
+                      color="secondary"
+                    >
+                      home
+                    </Typography>
+                  </ListItem>
                 </Link>
-                <Link to='/about' style={{ textDecoration: 'none' }}>
-              <ListItem
-                button
-                justifyContent='center'
-                onClick={handleDrawerItemClick}
-              >
-                <InfoIcon marginLeft={'20px'}></InfoIcon>
-                <Typography
-                  margin={'0 20px'}
-                  variant='overline'
-                  color='secondary'
-                >
-                  about
-                </Typography>
-              </ListItem>
+                <Link to="/about" style={{ textDecoration: "none" }}>
+                  <ListItem
+                    button
+                    justifyContent="center"
+                    onClick={handleDrawerItemClick}
+                  >
+                    <InfoIcon marginLeft={"20px"}></InfoIcon>
+                    <Typography
+                      margin={"0 20px"}
+                      variant="overline"
+                      color="secondary"
+                    >
+                      about
+                    </Typography>
+                  </ListItem>
                 </Link>
-                <Link to='/contact' style={{ textDecoration: 'none' }}>
-              <ListItem
-                button
-                justifyContent='center'
-                onClick={handleDrawerItemClick}
-              >
-                <ContactMailIcon marginLeft={'20px'}></ContactMailIcon>
-                <Typography
-                  margin={'0 20px'}
-                  variant='overline'
-                  color='secondary'
-                >
-                  contact
-                </Typography>
-              </ListItem>
+                <Link to="/contact" style={{ textDecoration: "none" }}>
+                  <ListItem
+                    button
+                    justifyContent="center"
+                    onClick={handleDrawerItemClick}
+                  >
+                    <ContactMailIcon marginLeft={"20px"}></ContactMailIcon>
+                    <Typography
+                      margin={"0 20px"}
+                      variant="overline"
+                      color="secondary"
+                    >
+                      contact
+                    </Typography>
+                  </ListItem>
                 </Link>
 
                 {/* Add more Link components for other pages */}
