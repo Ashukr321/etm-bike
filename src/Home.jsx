@@ -22,8 +22,8 @@ const Home = () => {
     <CounterUp/>
     {/* <Service/> */}
     {/* <Product/> */}
-    {/* <Connect/> */}
-    <Client/>
+    <Connect/>
+    {/* <Client/> */}
 
     </>
   );

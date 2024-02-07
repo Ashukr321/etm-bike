@@ -18,7 +18,7 @@ import Home from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import CallIcon from '@mui/icons-material/Call';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 import logo from "../../assets/logo.png";
 
 import "./Navbar.css";
@@ -110,23 +110,20 @@ const Navbar = () => {
                 color="warning"
                 sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
               >
-                Connect <WhatsAppIcon />
+                Connect <WhatsAppIcon color="success" />
               </Button>
             </Link>
 
-            <Link to="/"  target="_blank">
+            <Link to="/enquiry" >
               <Button
                 variant="contained"
                 color="info"
                 sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
               >
-              Enquiry<CallIcon/>
+              Rent Now<ContactPageIcon color="error"/>
               </Button>
             </Link>
             </ButtonGroup>
-
-
-
           </Box>
         </Hidden>
 
