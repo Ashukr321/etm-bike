@@ -90,7 +90,7 @@ const Navbar = () => {
               </Link>
              
             </ButtonGroup>
-            <Link to='#' marginLeft={2}>
+            <Link to='https://wa.me/7004246315' marginLeft={2} target='_blank'>
   <Button variant="contained" color='warning' sx={{ color: '#f3e5f5', fontSize: "1.1rem" }}>
     Connect <WhatsAppIcon />
    
