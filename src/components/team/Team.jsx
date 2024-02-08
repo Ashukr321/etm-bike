@@ -18,13 +18,13 @@ const Team = () => {
           <div class="text-center text-gray-500 dark:text-gray-400">
               <img class="mx-auto mb-4 w-36 h-36 rounded-full" src={founder} alt="Bonnie Avatar"/>
 
-              <h3  class="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h3  class="mb-1 text-2xl font-bold tracking-tight text-gray-900 ">
                   <Link to="https://www.linkedin.com/in/ravi-shekhar-090bb932/" target='_blank'>
                     Ravi Shekhar
                   </Link>
               </h3>
 
-              <p className=' ml-4'>Founder</p>
+              <p className=' text-slate-800 ml-4'>Founder</p>
               <ul class="flex justify-center mt-4 space-x-4">
                   <li>
                       <Link to="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
@@ -54,7 +54,7 @@ const Team = () => {
                   </Link>
               </h3>
 
-              <p className=' ml-4'>Co-Founder</p>
+              <p className='text-slate-800 ml-4'>Co-Founder</p>
               <ul class="flex justify-center mt-4 space-x-4">
                   <li>
                       <Link to="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">
@@ -84,7 +84,7 @@ const Team = () => {
                   </Link>
               </h3>
 
-              <p className=' ml-4'>Co-Founder</p>
+              <p className='text-slate-800 ml-4'>Co-Founder</p>
               <ul class="flex justify-center mt-4 space-x-4">
                   <li>
                       <Link to="#" class="text-[#39569c] hover:text-gray-900 dark:hover:text-white">

@@ -21,7 +21,7 @@ const CounterUp = () => {
                   {/* Conditionally render CountUp component when counterStart is true */}
                   {counterStart && <CountUp start={0} end={2700} duration={1} delay={0} />}
                 </h2>
-                <p className="leading-relaxed">Users</p>
+                <p className=" text-slate-800 leading-relaxed">Users</p>
               </div>
 
               {/* Statistic block for Subscribes */}
@@ -30,7 +30,7 @@ const CounterUp = () => {
                   {/* Conditionally render CountUp component when counterStart is true */}
                   {counterStart && <CountUp start={0} end={470} duration={2} delay={0} />}k
                 </h2>
-                <p className="leading-relaxed">Subscribes</p>
+                <p className="text-slate-800 leading-relaxed">Subscribes</p>
               </div>
 
               {/* Statistic block for Downloads */}
@@ -39,7 +39,7 @@ const CounterUp = () => {
                   {/* Conditionally render CountUp component when counterStart is true */}
                   {counterStart && <CountUp start={0} end={1200} duration={2} delay={0} />}
                 </h2>
-                <p className="leading-relaxed">Downloads</p>
+                <p className=" text-slate-800 leading-relaxed">Downloads</p>
               </div>
 
               {/* Statistic block for Products */}
@@ -48,7 +48,7 @@ const CounterUp = () => {
                   {/* Conditionally render CountUp component when counterStart is true */}
                   {counterStart && <CountUp start={0} end={15} duration={2} delay={0} />}
                 </h2>
-                <p className="leading-relaxed">Products</p>
+                <p className=" text-slate-800 leading-relaxed">Products</p>
               </div>
             </div>
           </div>
