@@ -85,14 +85,14 @@ const Navbar = () => {
                 </Button>
               </Link>
 
-              <Link to="/product">
+              {/* <Link to="/product">
                 <Button
                   sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
                   variant="none"
                 >
                   product
                 </Button>
-              </Link>
+              </Link> */}
               <Link to="/client">
                 <Button
                   sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
@@ -184,7 +184,7 @@ const Navbar = () => {
                     </Typography>
                   </ListItem>
                 </Link>
-                <Link to="/product" style={{ textDecoration: "none" }}>
+                {/* <Link to="/product" style={{ textDecoration: "none" }}>
                   <ListItem
                     button
                     justifyContent="center"
@@ -199,7 +199,7 @@ const Navbar = () => {
                       product
                     </Typography>
                   </ListItem>
-                </Link>
+                </Link> */}
 
                 {/* Add more Link components for other pages */}
               </List>
