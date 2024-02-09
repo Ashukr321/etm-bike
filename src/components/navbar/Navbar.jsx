@@ -168,7 +168,7 @@ const Navbar = () => {
                     </Typography>
                   </ListItem>
                 </Link>
-                <Link to="/about" style={{ textDecoration: "none" }}>
+                <Link to="/service" style={{ textDecoration: "none" }}>
                   <ListItem
                     button
                     justifyContent="center"
@@ -180,11 +180,11 @@ const Navbar = () => {
                       variant="overline"
                       color="secondary"
                     >
-                      about
+                      services
                     </Typography>
                   </ListItem>
                 </Link>
-                <Link to="/contact" style={{ textDecoration: "none" }}>
+                <Link to="/product" style={{ textDecoration: "none" }}>
                   <ListItem
                     button
                     justifyContent="center"
@@ -196,7 +196,7 @@ const Navbar = () => {
                       variant="overline"
                       color="secondary"
                     >
-                      contact
+                      product
                     </Typography>
                   </ListItem>
                 </Link>

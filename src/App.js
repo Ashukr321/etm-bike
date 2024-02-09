@@ -14,6 +14,7 @@ import {
 } from "./components";
 import Home from "./Home";
 import Pricing from "./pages/Pricing";
+import Enquiry from "./components/enquiry/Enquiry";
 
 const App = () => {
   return (
@@ -49,6 +50,7 @@ const App = () => {
 
           {/* pages */}
           <Route path="/pricing" element={<Pricing />} />
+          <Route path="/enquiry" element={<Enquiry />} />
 
         </Routes>
         <Footer />

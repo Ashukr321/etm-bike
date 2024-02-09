@@ -7,10 +7,11 @@ const Hero = () => {
     <>
       <Stack className="hero">
         {/* Background Video */}
-        <video className="hero-video" controls   loop>
-          <source src={vd} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <video className="hero-video" autoPlay loop muted>
+  <source src={vd} type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
+
 
         {/* Content */}
         <h1 className="hero_heading">ETM BIKE </h1>
