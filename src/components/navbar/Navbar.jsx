@@ -18,7 +18,7 @@ import Home from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import ContactPageIcon from '@mui/icons-material/ContactPage';
+import ContactPageIcon from "@mui/icons-material/ContactPage";
 import logo from "../../assets/logo.png";
 
 import "./Navbar.css";
@@ -104,30 +104,29 @@ const Navbar = () => {
             </ButtonGroup>
 
             <ButtonGroup>
-            <Link to="https://wa.me/7004246315" marginLeft={2} >
-              <Button
-                variant="contained"
-                color="warning"
-                sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
-              >
-                Connect <WhatsAppIcon color="success" />
-              </Button>
-            </Link>
+              <Link to="https://wa.me/7004246315" marginLeft={2}>
+                <Button
+                  variant="contained"
+                  color="warning"
+                  sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
+                >
+                  Connect <WhatsAppIcon color="success" />
+                </Button>
+              </Link>
 
-            <Link to="/enquiry" >
-              <Button
-                variant="contained"
-                color="info"
-                sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
-              >
-              Rent Now<ContactPageIcon color="error"/>
-              </Button>
-            </Link>
+              <Link to="/enquiry">
+                <Button
+                  variant="contained"
+                  color="info"
+                  sx={{ color: "#f3e5f5", fontSize: "1.1rem" }}
+                >
+                  Rent Now
+                  <ContactPageIcon color="error" />
+                </Button>
+              </Link>
             </ButtonGroup>
           </Box>
         </Hidden>
-
-
 
         {/* Mobile menu button (visible on smaller screens) */}
         {isSmallScreen && (
@@ -140,6 +139,7 @@ const Navbar = () => {
             >
               <MenuIcon />
             </IconButton>
+
             {/* Drawer for mobile navigation */}
             <Drawer
               anchor="left"
@@ -148,8 +148,6 @@ const Navbar = () => {
               onClose={handleDrawerClose}
               backgroundColor="seconday"
             >
-
-
               <List>
                 {/* Mobile navigation items */}
                 <Link to="/" style={{ textDecoration: "none" }}>
@@ -201,6 +199,32 @@ const Navbar = () => {
                   </ListItem>
                 </Link>
 
+                <Link to="https://wa.me/7004246315" marginLeft={2}>
+                <ListItem>
+
+                
+                  <Button
+                    variant="none"
+                    color="warning"
+                    sx={{ color: "#000", fontSize: "1.1rem" }}
+                  >
+                    Connect <WhatsAppIcon color="success" />
+                  </Button>
+                  </ListItem>
+                </Link>
+
+                <Link to="/enquiry">
+                <ListItem>
+                  <Button
+                    variant="outlined"
+                    color="info"
+                    sx={{ color: "#000", fontSize: "1.1rem" }}
+                  >
+                    Rent Now
+                    <ContactPageIcon color="error" />
+                  </Button>
+                  </ListItem>
+                </Link>
                 {/* Add more Link components for other pages */}
               </List>
             </Drawer>
